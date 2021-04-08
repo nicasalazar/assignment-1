@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-        <title>
-            Assignment 1
-        </title>
-        <link rel="stylesheet" href="../assignment-1/styles.css" rel="preconnect" href="https://fonts.gstatic.com">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/styles.css" rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     </head>
-    <div class="container">
-        <header>
-            <nav>
-            <ul>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Docs</li>
-            </ul>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="header">
+                    <ul class="top">
+                        <li>About</li>
+                        <li>Docs</li>
+                    </ul>
+                </nav>
+            </header>
+            <nav class="side">
+                <h1>notes</h1>
+                    <button type="button" id="open">>></button>
+                    <ul>
+                        <li>note one</li>
+                        <li>note two</li>
+                    </ul>
             </nav>
-        </header>
-            <div class="notes">
-                    <form action="/assignment-1/Index.html" >  
-                        <button type="button" id="close"> << </button> 
-                      </form>  
-            
-                <h2>My Notes</h2>
-                <ul>
-                    <li class="note-item">note one</li>
-                    <li class="note-item">note two</li>
-                </ul>
-               
-            </div>
-            <main>
-                <section>
-                    <div class="top_buttons">
+            <div class="main">
+                    <div class="note-area">
                         <button type="button" id="new">+</button>
-                    </div>
-                    <textarea id="note" name="note" rows="5" cols="33"> Your note here</textarea>
+                    <textarea id="notes" name="note" rows="10" cols="50"> Your note here</textarea>
                     <div class="bottom_buttons">
                         <button type="button" id="save">Save</button>
                         <button type="button" id="delete">Delete</button>
                     </div>
-                </section>
-            </main>
-            <footer>
-                <p class="icons">
-                    created by Dannicah Salazar
-                </p>
+                    </div>
+            </div>
+            <footer> 
+                    <p>created by Dannicah Salazar</p>
             </footer>
         </div>
         <script src="js/script.js"></script>
