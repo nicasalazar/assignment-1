@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-        <title>
-            Assignment 1
-        </title>
-        <link rel="stylesheet" href="../assignment-1/CSS/styles.css" rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/styles.css" rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../assignment-1/JS/script.js"></script>
 
@@ -14,9 +11,14 @@
     <body>
         <div class="container">
             <header>
-                <li id="links">About</li>
-                <li id="links">Docs</li>
+                <nav class="header">
+                    <ul class="top">
+                        <li>About</li>
+                        <li>Docs</li>
+                    </ul>
+                </nav>
             </header>
+
             <nav>
                 <div class="slide_in">
                     <form action="note.html" >  
@@ -30,14 +32,23 @@
                 </ul>
             </nav>
             <main>
+
+            <main class="main">
+
                 <section>
                     <div class="top_buttons">
-                        <button type="button" onclick="newNote();" id="new">+ Create a new note</button>
-                
+                        <button type="button" id="new">+ Create a new note</button>
+
                     </div>
                 </section>
             </main>
-            <footer>
+            <aside class="sidebar">
+                    <h1>notes</h1>
+                    <form action="note.html">
+                        <button type="button" id="open">>></button>
+                    </form>
+            </aside>
+            <footer class="footer">
                 <p class="icons">
                     created by Dannicah Salazar
                 </p>
