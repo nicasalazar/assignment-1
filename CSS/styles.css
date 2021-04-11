@@ -10,21 +10,32 @@ html, body{
     grid-template-rows: min-content auto min-content;
 }
 header{
-    background-color: rgb(151, 126, 127);
+    background-color: #575279;
     grid-row: 1;
     grid-column: 1/6;
     margin-bottom: 10px;
-    text-align: center;
 }
+
+#links{
+    font-size: 1rem;
+    color: #e0def4;
+    list-style-type: none;
+    margin-right: 3rem;
+    display: inline-block;
+    float: right;
+    
+}
+
 nav{
-    background-color: rgb(192, 192, 192);
+    background-color: #6e6a86;
     grid-column: 1;
     grid-row: 2;
     margin-right: 10px;
     overflow-y: auto;
+    color: #faf4ed;
 }
 main{
-    background-color: rgb(236, 232, 232);
+    background-color: #9893a5;
     grid-column: 2/6;
     grid-row: 2;
 }
@@ -40,18 +51,18 @@ section{
     margin: 2%
 }
 #new {
-    background-color: rgb(95, 152, 125);
+    background-color: #c4a7e7;
     border-radius: 15px;
     padding: 20px;
-    color: white;
+    color: #faf4ed;
     font-size: 20px;
     border: none
 }
 
 .notes{
-    background-color: white;
+    background-color: #faf4ed;
     border-radius: 15px;
-    width: 85%;
+    width: 75%;
     flex: 1 1 0;
     margin: auto;
 }
@@ -71,31 +82,33 @@ section{
     margin: 2%;
 }
 #save {
-    background-color: rgb(95, 152, 125);
+    background-color: #575279;
     border-radius: 15px;
     padding: 20px;
     margin-right: 5px;
-    color: white;
+    color: #faf4ed;
     font-size: 20px;
     border: none
 }
-#cancel {
-    background-color: rgb(210, 60, 34);
+#delete {
+    background-color: #6e6a86;
     border-radius: 15px;
     padding: 20px;
     margin-left: 5px;
-    color: white;
+    color: #faf4ed;
     font-size: 20px;
     border: none
 }
 footer{
-    background-color: rgb(223, 188, 184);
+    background-color: #907aa9;
     grid-row:3;
     grid-column: 1/6;
     margin-top: 10px;
+    color: #faf4ed;
 }
 footer > h2{
     text-align: center;
+
 }
 .icons{
     display: flex;
