@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: minmax(0px, auto) 1fr;
+    grid-template-areas: 
+        's h'
+        's m'
+        'f f';
+    width: 100vw;
+    height: 100vh;
+    }
+
+
+/* Header Styles */
+
+header{
+    background-color: #9893a5;
+    grid-area: h;
+}
+body.dark-mode{
+    background-color: #2a273f;
+}
+
+#links{
+    font-size: 2rem;
+    color: #e0def4;
+    list-style-type: none;
+    margin-right: 3rem;
+    float: right;
+    margin-top: 10px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+button{
+        color:#e0def4;
+        background-color: #6e6a86;
+        border: none;
+        border-radius: 5px;
+        font-size: 2rem;
+        padding: 2px;
+        margin-top: 10px;
+        margin-right: 3rem;
+        float: right;
+        font-family: 'Asap Condensed', sans-serif;
+    }
+    
+
+/* Side Styles */
+
+.side{
+    grid-area: s;
+    background-color: #9893a5;
+}
+
+.side h1{
+    font-size: 3rem;
+    color: #e0def4;
+}
+
+.side ul{
+    overflow: auto;
+}
+
+
+li{
+    font-size: 2.5rem;
+    color:#e0def4;
+    list-style-type: none;
+    margin-left: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.sidebar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9893a5; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #faf4ed;
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+  .sidebar a:hover {
+    color: #d7827e;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+ 
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #575279;
+    color: #faf4ed;
+    padding: 10px 15px;
+    border: none;
+    font-family: 'Asap Condensed', sans-serif;
+  }
+  
+  .openbtn:hover {
+    background-color: #6e6a86;
+  }
+
+
+/* Main Styles */
+
+.main{
+    grid-area: m;
+    background-color: #f2e9de;
+    color:#907aa9;
+    font-size: 5rem;
+}
+
+#text-area {
+    width: 400px;
+    height: 150px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#note_buttons{
+    display: flex;
+    height: min-content;
+    margin: 2%;
+}
+
+#new {
+    background-color: #907aa9;
+    border-radius: 15px;
+    padding: 10px;
+    color: #e0def4;
+    font-size: 20px;
+    border: none;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#save {
+    background-color: #575279;
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 60px;
+    color: #faf4ed;
+    font-size: 20px;
+    border: none;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    
+
+}
+#remove {
+    background-color: #6e6a86;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+/* Footer Styles */
+footer {
+    grid-area: f;
+    background-color: #575279;
+}
+
+footer p {
+    color: #faf4ed;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-rows: 5rem 8rem 1fr 5rem;
+        grid-template-areas: 
+            'h h'
+            's s'
+            'm m'
+            'f f';
+    }
+}
+
+
+/* Dark Mode Styles */
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: #eee;
+      --bkg-color: #1f1d2e;
+    }
+    body.light-theme {
+      --text-color: #575279;
+      --bkg-color: #fff;
+    }
+  }
